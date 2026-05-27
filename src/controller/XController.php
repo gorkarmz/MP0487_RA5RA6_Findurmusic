@@ -122,9 +122,9 @@ class AdminController
 
     public function delete(): void
     {
-        $eventName = $_POST['eventname'];
+        $eventName = $_POST['eventName'];
         // Manejo de errores de parte del servidor.
-        if (!empty($eventName)) {
+        if (empty($eventName)) {
             $_SESSION['error_message'] = "Todos los campos son obligatorios.";
             header('Location: ../view/admin_profile.php');
             exit();
