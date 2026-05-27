@@ -1,0 +1,194 @@
+body {
+    background-color: bisque;
+}
+
+
+.centrar {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 26%;
+}
+
+header {
+    background-color: rgb(202, 155, 92);
+    border-radius: 20px;
+}
+
+.texto_usuario {
+    width: 50%;
+    display: inline-block;
+    height: 50%;
+}
+
+.text1 {
+    display: inline-block;
+    background-color: brown;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.header_usuario {
+    width: 100%;
+    background-color: chocolate;
+    border-radius: 6px;
+    height: 70px;
+}
+
+.texto_derecha {
+    float: left;
+    margin-left: 20px;
+}
+
+.artistas h2 {
+    background-color: rgb(241, 182, 17);
+    display: inline;
+    border-radius: 10px;
+}
+
+.artistas {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#volver {
+    border: 1px solid black;
+    background-color: rgb(180, 180, 79);
+    padding: 10px;
+    color: blue;
+    border-radius: 5px;
+
+
+}
+
+#Muro {
+    font-size: 30px;
+    padding-top: 100px;
+    margin-top: -0px;
+    font-style: italic;
+
+
+}
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(21, 72, 144);
+    height: 250px;
+    border-radius: 7px;
+
+
+}
+
+.update_a button {
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: underline;
+    background-color: rgba(116, 167, 116, 0.952);
+    padding: 0px 3px;
+}
+
+.update_a > button:first-child:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.update_class>h1 {
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+    
+}
+
+.update_class > .update_a{
+    display: inline-block;
+    margin-left: 360px;
+    padding: 4px;
+}
+
+.update_a > button:nth-child(2):hover{
+    background-color: red;
+}
+
+.update_a > button {
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .centrar {
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        width: 100%;
+    }
+
+    header {
+        width: 40%;
+        display: inline-block;
+        background-color: rgb(202, 155, 92);
+        margin-top: 50px;
+    }
+
+    .header_usuario {
+        width: 100%;
+        background-color: chocolate;
+    }
+
+    #Muro {
+        font-size: 30px;
+        font-style: italic;
+        padding-top: 0;
+        margin-top: -40px;
+    }
+
+    footer {
+        background-color: rgb(21, 72, 144);
+        padding-top: 178px;
+        height: 165.1px;
+        display: inline-block;
+        width: 40%;
+        padding-bottom: 0px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: -230px;
+        margin-bottom: 100px;
+    }
+
+}
+
+#deleteProfile{
+    position: fixed;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9998;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ 
+}
+
+button#accept-delete{
+    margin: 3px;
+}
+#accept-delete:hover {
+    background-color: red;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+    z-index: 9998;
+}
+
+h1 {
+    margin-left: 5px;
+}

@@ -1,0 +1,612 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    background-color: beige;
+
+
+}
+
+.contenidor-relative {
+    position: relative;
+    max-height: 150px;
+}
+
+body {
+    background-color: rgb(236, 236, 160);
+    margin: 0;
+
+}
+
+#button-container {
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+
+#prev-btn,
+#next-btn {
+    display: inline-block; 
+}
+
+#events-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+
+#events-list li {
+    flex: 0 0 calc(20% - 20px);
+    margin: 10px;
+    padding: 35px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+.event-details p:first-child {
+    color: rgb(0, 140, 255);
+    font-size: 20px;
+}
+
+.flex-container {
+    background-color: beige;
+    text-align: center;
+    padding: 35px;
+    overflow: hidden;
+}
+
+
+#descubre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 94, 0);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.c5 img,
+.c4 img,
+.c3 img,
+.c2 img,
+.c1 img {
+    border-radius: 30px;
+}
+
+#titulo {
+    margin-left: 10px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+
+}
+
+.imgRegisters,
+.imgPerfil {
+    padding: 2px;
+}
+
+nav input {
+    border-radius: 8px;
+    width: 55%;
+    height: 45px;
+    background-color: beige;
+}
+
+nav button:hover {
+    background-color: lightgray;
+    /* Cambiar el color de fondo */
+
+}
+
+.btnRegisters {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btnRegisters p {
+    padding: 0px;
+    margin-right: 10px;
+    line-height: normal;
+    align-self: center;
+}
+
+.btnRegisters button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btnRegisters button:hover {
+    background-color: rgb(236, 250, 187);
+    /* Cambiar el color de fondo */
+    border-radius: 5px;
+    /* Agregar bordes redondeados */
+}
+
+.btnRegisters img {
+    width: 20px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 35px;
+
+}
+
+.links button img {
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+
+.links button {
+    display: flex;
+    flex: column;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+
+.links button:hover {
+    background-color: lightgray;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.perfil {
+    display: flex;
+    right: 16.5%;
+    position: absolute;
+    margin-bottom: 80px;
+}
+
+
+.registers {
+    display: flex;
+    right: 16.5px;
+    margin-bottom: 80px;
+    position: absolute;
+
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: dimgrey;
+    background: #beb6aa;
+    padding: .5em 1em;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+}
+
+.contenedor a {
+    color: darkgoldenrod;
+    padding: .5em 1em;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.contenedor a:hover {
+    background: black;
+    color: darkgoldenrod;
+    box-sizing: border-box;
+
+}
+
+.popupHeader * {
+
+    margin: 0;
+}
+
+.popupHeader button {
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+.elemento {
+    box-sizing: border-box;
+
+}
+
+.popupHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#popupContent button {
+    margin-bottom: 50px;
+}
+
+#aboutUsBtn {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 9px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+#returnBtn {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 9px;
+    cursor: pointer;
+
+}
+
+#aboutUsBtn:hover {
+    background-color: #4918db;
+
+}
+
+.dropdowncontent1 {
+
+    display: none;
+    width: 500px;
+
+}
+
+.dropdowncontent1 a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    background-color: black;
+
+}
+
+.dropdowncontent2 {
+    display: none;
+    width: 500px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dropdowncontent2 a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    background-color: black;
+}
+
+.dropdown:hover .dropdowncontent1 {
+    display: block;
+    margin-top: 15px;
+    position: absolute;
+    margin-left: -39px;
+
+}
+
+.dropdown:hover .dropdowncontent2 {
+    display: block;
+    margin-top: 48px;
+    position: absolute;
+    margin-left: -39px;
+}
+
+footer {
+    background-color: beige;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+footer h1 {
+    color: rgb(255, 94, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.aboutUs {
+    text-align: center;
+}
+
+#orange {
+    color: rgb(255, 94, 0);
+}
+
+.alinear1 {
+    display: inline-block;
+    width: 35%;
+    margin-left: 10px;
+    vertical-align: top;
+
+}
+
+
+.alinear2 {
+    display: inline-block;
+    width: 52%;
+    vertical-align: top;
+
+}
+
+.alinear3 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+
+}
+
+.alinearTextos {
+    width: 50%;
+    text-align: center;
+    vertical-align: top;
+
+
+}
+
+
+#logo {
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+
+@media screen and (max-width: 900px) {
+    #descubre {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 94, 0);
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .links {
+        margin-right: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    #logo {
+        border-radius: 30px;
+        padding: 12px 0px;
+        width: 250px;
+        margin-left: 15px;
+    }
+
+    .perfil {
+        display: flex;
+        right: 35.5%;
+        position: absolute;
+        margin-bottom: 80px;
+    }
+
+    .elemento {
+        box-sizing: border-box;
+        width: 200px;
+        margin-left: 65px;
+        margin-right: -57px;
+    }
+
+    .dropdown {
+        width: 80px;
+        margin-left: 0px;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: dimgrey;
+        background: #beb6aa;
+        padding: 0.5em 1em;
+        box-sizing: border-box;
+        border-radius: 6px;
+        text-decoration: none;
+        width: 100%;
+        height: 72px;
+        margin-left: 0px;
+    }
+
+    .c1 {
+        padding: 10px 15px;
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .c2 {
+        width: 48%;
+    }
+
+    .c2,
+    .c3 {
+        margin-top: 10px;
+
+    }
+
+    .c3 {
+        width: 48%;
+    }
+
+    .c1 img {
+        width: 500px;
+        height: 300px;
+        margin-bottom: 15px;
+    }
+
+    .c2 img {
+        width: 350px;
+        height: 300px;
+
+    }
+
+    .c3 img {
+        width: 350px;
+        height: 300px;
+
+    }
+
+    .alinear1 {
+        display: inline-block;
+        width: 35%;
+        margin-left: 10px;
+        vertical-align: top;
+    }
+
+    .alinear2 {
+        display: inline-block;
+        width: 300px;
+        vertical-align: top;
+        margin-left: 40.5px;
+    }
+
+    .alinear3 {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+        text-align: right;
+        margin-left: -20px;
+    }
+
+    .flex-container {
+        background-color: beige;
+        text-align: center;
+        padding: 35px;
+
+    }
+
+}
+
+/* MENU DE COOKIES*/
+#cookies {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    /* Asegura que el mini menú esté por encima del contenido */
+    display: block;
+    /* Por defecto, mostrar el mini menú */
+}
+
+/* Se encarga del fondo gris detrás del menú.
+    Se ejecuta antes del body*/
+
+body::before {
+    content: '';
+    /* Crea un fondo difuso */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color de fondo semi-transparente */
+    z-index: 9998;
+    /* Asegura que el fondo difuso esté detrás del mini menú */
+}
+
+body.cookiesAccepted::before,
+body.cookiesAccepted #cookies {
+    display: none;
+    /* Oculta tanto el fondo difuso como el mini menú cuando se aceptan las cookies */
+}
+
+body.cookiesRejected::before,
+body.cookiesRejected #cookies {
+    display: none;
+    /* Oculta tanto el fondo difuso como el mini menú cuando se aceptan las cookies */
+}
+
+/* Botones del mini menu*/
+#accept-cookies,
+#reject-cookies {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+#accept-cookies:hover,
+#reject-cookies:hover {
+    background-color: #468849;
+
+}
+
+#accept-cookies-notification {
+    background-color: red;
+    color: white;
+    padding: 1px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+#accept-cookies-notification:hover {
+    background-color: #468849;
+}
